@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 import time
 driver = webdriver.Chrome(ChromeDriverManager().install())
-driver.implicitly_wait(5)
+driver.implicitly_wait(10)
 driver.maximize_window()
 driver.get("http://newtours.demoaut.com")
 driver.find_element_by_css_selector("input[name='userName']").send_keys("prahan63")
