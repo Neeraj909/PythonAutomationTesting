@@ -16,4 +16,8 @@ static = driver.find_element_by_xpath("//ul[@class='childmenu ']//a[contains(tex
 actions = ActionChains(driver)
 actions.move_to_element(interactions).move_to_element(drag).move_to_element(static).click().perform()
 time.sleep(5)
+driver.get("http://testautomationpractice.blogspot.com/")
+ele = driver.find_element_by_xpath("//*[@id='HTML10']/div[1]/button")
+actions.double_click(ele).perform()
+time.sleep(5)
 driver.close()
